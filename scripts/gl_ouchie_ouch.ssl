@@ -2,15 +2,8 @@
 #include "sfall/sfall.h"
 
 procedure combat_damage begin
-    variable target   = get_sfall_arg,
-             attacker = get_sfall_arg,
-             damage   = get_sfall_arg,
-             health   = get_critter_stat(target, STAT_current_hp);
-
-    if damage >= health then
-        float_msg(target, "aaaarrrrrghhh....", FLOAT_MSG_RED);
-    else
-        float_msg(target, "ouch!", FLOAT_MSG_GREEN);
+    variable target = get_sfall_arg;
+    float_msg(target, "ouch!", FLOAT_MSG_RED);
 end
 
 procedure start begin
