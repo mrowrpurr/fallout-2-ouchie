@@ -1,4 +1,13 @@
-procedure start begin
+#include "define.h"
+#include "sfall/sfall.h"
 
+procedure combat_damage begin
+    variable target = get_sfall_arg;
+    float_msg(target, "ouch!", FLOAT_MSG_RED);
+end
+
+procedure start begin
+    if game_loaded then
+        register_hook_proc(HOOK_COMBATDAMAGE, combat_damage);
 end
 
