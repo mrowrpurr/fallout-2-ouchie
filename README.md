@@ -1,2 +1,3 @@
-# fallout-2-ouchie
- Characters say "Ouch!" when hit
+# Fallout 2 "ouchie!"
+
+> Characters say "Ouch!" when hit in combat
