@@ -21,6 +21,9 @@ copy Ouchie.ini mods\
 :: Add mods\ folder to .zip
 7z a Ouchie.zip mods\
 
+:: Also zip up the whole data folder (along with the .ini)
+7z a Ouchie_Loose.zip data\ Ouchie.ini
+
 :: Wait a moment before deleting otherwise 7z might still be archiving...
 timeout /t 1
 
